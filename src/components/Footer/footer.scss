@@ -1,0 +1,106 @@
+@import "../../app.scss";
+
+.main-footer {
+  width: 100vw;
+  height: 256px;
+  background: white;
+
+  .footer-area {
+    max-width: 1300px;
+    margin: 0px auto;
+
+    .footer-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      padding: 2rem;
+
+      .logo-container {
+        margin-top: 24px;
+        .foot-logo {
+          width: 300px;
+        }
+      }
+
+      .linkrdlist {
+        display: flex;
+
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        margin-top: 32px;
+        list-style: none;
+
+        @include desktop {
+          width: 60%;
+        }
+
+        @include mobile {
+          width: 100%;
+        }
+
+        .linkname {
+          font-weight: normal;
+          font-size: var(--body-regualr);
+          line-height: 26px;
+
+          color: black;
+
+          margin: 0px 24px;
+          cursor: pointer;
+        }
+      }
+      .divider {
+        margin-top: 48px;
+        width: 100%;
+        height: 2px;
+        background: black;
+        opacity: 0.2;
+      }
+      .copyrightcontainer {
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-top: 25px;
+
+        .copyright {
+          font-style: normal;
+          font-weight: normal;
+
+          line-height: 24px;
+          color: black;
+
+          @include desktop {
+            font-size: var(--body-small);
+          }
+
+          @include mobile {
+            font-size: 0.7rem;
+          }
+        }
+
+        .link-container {
+          width: 10%;
+          display: flex;
+          -webkit-box-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: center;
+          align-items: center;
+          @include desktop {
+            width: 10%;
+          }
+
+          @include mobile {
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+}

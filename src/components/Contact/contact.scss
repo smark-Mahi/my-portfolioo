@@ -1,0 +1,192 @@
+@import "../../app.scss";
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+
+  .bg-image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/contactbackground.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(3px);
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+  }
+  .contact-content {
+    top: 0px;
+    left: 0px;
+    background: transparent;
+    width: 100vw;
+
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+    @include mobile {
+      height: 1300px;
+      align-items: flex-start;
+    }
+
+    @include desktop {
+      height: 100vh;
+
+      align-items: center;
+    }
+
+    .contact-container {
+      width: 800px;
+
+      @include mobile {
+        height: 1000px;
+        padding: 1rem;
+      }
+
+      @include desktop {
+        height: 500px;
+        padding: 2rem;
+      }
+
+      .contact-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 52px;
+        text-align: center;
+        letter-spacing: -0.4px;
+        color: rgb(255, 255, 255);
+
+        @include desktop {
+          margin-top: 20px;
+        }
+      }
+
+      .contact-para {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+
+        mix-blend-mode: normal;
+
+        @include desktop {
+          margin-top: 30px;
+        }
+        @include mobile {
+          width: 60%;
+          margin: 2rem auto;
+        }
+      }
+      .contact-form {
+        width: 580px;
+        height: 270px;
+        margin: 63px auto 0px;
+
+        @include mobile {
+          margin-top: 20px;
+        }
+
+        .contact-info {
+          display: flex;
+          flex-direction: column;
+
+          .contact-container-wrapper {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+
+            @include mobile {
+              flex-direction: column;
+            }
+
+            .contact-left {
+              @include mobile {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+              }
+
+              .name {
+                width: 269px;
+                height: 60px;
+                mix-blend-mode: normal;
+                opacity: 0.2;
+                border: 2px solid rgb(255, 255, 255);
+                box-sizing: border-box;
+                border-radius: 10px;
+                padding: 1rem;
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+              }
+              .email {
+                width: 269px;
+                height: 60px;
+                mix-blend-mode: normal;
+                opacity: 0.2;
+                border: 2px solid rgb(255, 255, 255);
+                box-sizing: border-box;
+                border-radius: 10px;
+                margin-top: 30px;
+                padding: 1rem;
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+              }
+            }
+
+            .message {
+              mix-blend-mode: normal;
+              opacity: 0.2;
+              border: 2px solid rgb(255, 255, 255);
+              box-sizing: border-box;
+              border-radius: 10px;
+              padding: 1rem;
+              color: black;
+              font-size: 18px;
+              font-weight: bold;
+
+              @include desktop {
+                width: 469px;
+                height: 150px;
+              }
+
+              @include mobile {
+                width: 270px;
+                height: 200px;
+              }
+            }
+          }
+          .submit {
+            margin: 60px auto 0px;
+            width: 170px;
+            height: 60px;
+            background: rgb(37, 218, 197);
+            border-radius: 100px;
+            border: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+  }
+}

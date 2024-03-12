@@ -1,0 +1,118 @@
+@import "../../app.scss";
+
+.skills-section {
+  width: 100vw;
+  background-color: rgb(11, 13, 23);
+
+  @include desktop {
+    padding: 80px;
+  }
+
+  .section-2 {
+    max-width: 1300px;
+    margin: 0px auto;
+
+    .contents {
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+
+      .main-header {
+        font-weight: 800;
+        line-height: 64px;
+        text-align: center;
+        font-feature-settings: "salt", "liga" 0;
+        color: rgb(255, 255, 255);
+        flex: 0 0 auto;
+        order: 0;
+        -webkit-box-flex: 0;
+        margin: 8px 0px 48px;
+        width: 730px;
+
+        @include mobile {
+          font-size: 1.8rem;
+          width: 80%;
+          line-height: 48px;
+        }
+        @include desktop {
+          font-size: 48px;
+        }
+      }
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        @include mobile {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        @include tablet {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .card {
+          width: 350px;
+          height: 346px;
+          background-color: white;
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          justify-content: center;
+
+          .logo {
+            width: 34px;
+            height: 34px;
+            margin-bottom: 56px;
+          }
+          .container {
+            display: flex;
+            flex-direction: column;
+            .header {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 32px;
+              font-feature-settings: "salt", "liga" 0;
+              color: rgb(24, 25, 31);
+
+              margin: 12px 0px;
+            }
+
+            .paragraph {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 26px;
+              font-feature-settings: "salt", "liga" 0;
+              color: rgb(24, 25, 31);
+
+              margin: 12px 0px;
+            }
+          }
+
+          .explore {
+            margin-top: 40px;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            cursor: pointer;
+
+            h3 {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 16px;
+              font-feature-settings: "salt", "liga" 0;
+              color: rgb(140, 48, 245);
+              flex: 0 0 auto;
+              order: 0;
+              -webkit-box-flex: 0;
+              margin: 0px 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

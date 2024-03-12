@@ -1,0 +1,112 @@
+@import "../../app.scss";
+
+.acheive-area {
+  height: 519px;
+  width: 100vw;
+  background-color: white;
+  position: relative;
+  @include mobile {
+    height: 1200px;
+  }
+  .background {
+    padding: 2rem;
+    width: 100vw;
+    height: 300px;
+    background-color: rgb(46, 197, 206);
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    .acheive-container {
+      max-width: 1300px;
+      margin: 0px auto;
+
+      .acheive-content {
+        margin: 2rem;
+        .acheive-header {
+          font-weight: 800;
+          font-size: 48px;
+          line-height: 64px;
+
+          color: rgb(255, 255, 255);
+
+          margin: 8px 0px;
+        }
+        .acheive-para {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 32px;
+          font-feature-settings: "salt", "liga" 0;
+          color: rgb(255, 255, 255);
+
+          margin: 8px 0px;
+        }
+      }
+    }
+    .shapes-container {
+      width: 100%;
+      display: grid;
+
+      @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+        height: 300px;
+      }
+      @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-left: 3em;
+      }
+      padding: 1rem;
+      .backside {
+        filter: drop-shadow(rgba(41, 41, 42, 0.5) 0px 10px 20px);
+        .box {
+          width: 255px;
+          height: 255px;
+          background: rgb(255, 255, 255);
+          border-radius: 16px;
+          clip-path: polygon(
+            50% 0%,
+            90% 20%,
+            100% 60%,
+            75% 100%,
+            25% 100%,
+            0% 60%,
+            10% 20%
+          );
+          display: flex;
+          -webkit-box-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          align-items: center;
+          flex-direction: column;
+          .count {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 64px;
+            text-align: center;
+            color: rgb(24, 25, 31);
+            flex: 0 0 auto;
+            order: 0;
+            -webkit-box-flex: 0;
+            margin: 0px;
+          }
+          .text {
+            font-size: 18px;
+            line-height: 32px;
+            text-align: center;
+            font-feature-settings: "salt", "liga" 0;
+            color: rgb(24, 25, 31);
+            flex: 0 0 auto;
+            order: 1;
+            -webkit-box-flex: 0;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}

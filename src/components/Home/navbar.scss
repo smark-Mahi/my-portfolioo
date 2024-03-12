@@ -1,0 +1,331 @@
+@import "../../app.scss";
+
+.navbar {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 999;
+
+  .left {
+    width: 50vw;
+  }
+  .right {
+    width: 50vw;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+    .wrapper {
+      max-width: 1366px;
+      margin: auto;
+      height: 100%;
+      .img {
+        width: 300px;
+      }
+
+      @include mobile {
+        justify-content: flex-end;
+        padding: 20px;
+      }
+
+      span {
+        font-weight: bold;
+
+        .img {
+          @include mobile {
+            // display: none;
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-bg {
+  background-color: rgb(46, 197, 206);
+  transition: all 0.5s ease-in;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .left {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: var(--Primary-color-light);
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+
+      .main-header {
+        font-weight: 900;
+        font-size: var(--Header-big);
+
+        margin-top: 1.5em;
+        color: var(--Black-900);
+        flex: 0 0 auto;
+        order: 0;
+        background-color: #d5fafc;
+        @include mobile {
+          // font-size: var(--Header-Medium);
+          font-size: 1.8rem;
+          width: 80%;
+          line-height: 54px;
+        }
+        @include tablet {
+          font-size: 2.7rem;
+
+          line-height: 90px;
+          width: 100%;
+        }
+        @include desktop {
+          line-height: 98px;
+        }
+      }
+      .sub-header {
+        font-weight: normal;
+        line-height: 32px;
+        color: rgba(24, 25, 31, 0.356);
+        margin-bottom: 32px;
+        @include mobile {
+          font-size: 0.8rem;
+          width: 80%;
+        }
+        @include tablet {
+          font-size: 1rem;
+          width: 90%;
+        }
+      }
+      @include desktop {
+        width: 540px;
+      }
+    }
+  }
+  .right {
+    position: relative;
+
+    .user1 {
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      transition: all 0.4s ease-in-out 0s;
+      animation: 8s ease 0.5s infinite normal none running user1;
+
+      @include mobile {
+        // font-size: var(--Header-Medium);
+        width: 200px;
+        height: 200px;
+        top: 40%;
+        left: 30%;
+      }
+      @include tablet {
+        // font-size: var(--Header-Medium);
+        width: 200px;
+        height: 200px;
+        top: 40%;
+        left: 30%;
+      }
+    }
+    .user2 {
+      position: absolute;
+      top: 55%;
+      left: 5%;
+      transition: all 0.4s ease-in-out 0s;
+      animation: 8s ease 0.5s infinite normal none running user2;
+      @include mobile {
+        width: 100px;
+        height: 100px;
+        bottom: 20%;
+        left: 5%;
+      }
+      @include tablet {
+        width: 100px;
+        height: 100px;
+        bottom: 20%;
+        left: 5%;
+      }
+    }
+
+    .user3 {
+      position: absolute;
+      top: 70%;
+      right: 5%;
+      transition: all 0.4s ease-in-out 0s;
+      animation: 8s ease 0.5s infinite normal none running user3;
+      @include mobile {
+        width: 130px;
+        height: 130px;
+        bottom: 20%;
+        right: 5%;
+      }
+
+      @include tablet {
+        width: 130px;
+        height: 130px;
+        bottom: 20%;
+        right: 5%;
+      }
+    }
+
+    .user4 {
+      position: absolute;
+      top: 15%;
+      right: 20%;
+      transition: all 0.4s ease-in-out 0s;
+      animation: 8s ease 0.5s infinite normal none running user4;
+      @include mobile {
+        width: 130px;
+        height: 130px;
+        bottom: 20%;
+        right: 5%;
+      }
+
+      @include tablet {
+        width: 130px;
+        height: 130px;
+        bottom: 20%;
+        right: 5%;
+      }
+    }
+
+    .message1 {
+      position: absolute;
+      top: 25%;
+      left: 20%;
+      transition: all 0.4s ease-in-out 0s;
+      animation: 8s ease 0.5s infinite normal none running message1;
+      @include mobile {
+        width: 80px;
+        height: 80px;
+      }
+
+      @include tablet {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .message2 {
+      position: absolute;
+      top: 30%;
+      right: 10%;
+      transition: all 0.4s ease-in-out 0s;
+      animation: 8s ease 0.5s infinite normal none running message2;
+      @include mobile {
+        width: 80px;
+        height: 80px;
+        top: 35%;
+      }
+
+      @include tablet {
+        width: 80px;
+        height: 80px;
+        top: 35%;
+      }
+    }
+
+    .ring {
+      position: absolute;
+      bottom: 10%;
+      right: 40%;
+      transition: all 0.4s ease-in-out 0s;
+      animation: 8s ease 0.5s infinite normal none running ring;
+      @include mobile {
+        width: 80px;
+        height: 80px;
+      }
+
+      @include tablet {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    @keyframes user1 {
+      0% {
+        transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+      }
+      50% {
+        transform: translateY(-10px) rotate(-30deg) scale(1.1) translateX(10px);
+      }
+      100% {
+        transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+      }
+    }
+
+    @keyframes user2 {
+      0% {
+        transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+      }
+      50% {
+        transform: translateY(-10px) rotate(20deg) scale(1.1) translateX(10px);
+      }
+      100% {
+        transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+      }
+    }
+    @keyframes user3 {
+      0% {
+        transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+      }
+      50% {
+        transform: translateY(-10px) rotate(20deg) scale(1.1) translateX(10px);
+      }
+      100% {
+        transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+      }
+    }
+  }
+  @keyframes user4 {
+    0% {
+      transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+    }
+    50% {
+      transform: translateY(-10px) rotate(20deg) scale(1.1) translateX(10px);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+    }
+  }
+  @keyframes message1 {
+    0% {
+      transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+    }
+    50% {
+      transform: translateY(-10px) rotate(20deg) scale(1.1) translateX(10px);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+    }
+  }
+  @keyframes message2 {
+    0% {
+      transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+    }
+    50% {
+      transform: translateY(-10px) rotate(20deg) scale(1.1) translateX(10px);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+    }
+  }
+  @keyframes ring {
+    0% {
+      transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+    }
+    50% {
+      transform: translateY(-10px) rotate(20deg) scale(1.1) translateX(10px);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg) scale(1) translateX(0px);
+    }
+  }
+}
