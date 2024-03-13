@@ -33,7 +33,7 @@ const Acheivements = () => {
           </div>
           <div className="shapes-container" data-aos="fade-left">
             {acheive.map((item, i) => (
-              <div className="backside">
+              <div className="backside" key={i}>
                 <div className="box">
                   <h2 className="count">{item.count}</h2>
                   <span className="text">{item.text}</span>

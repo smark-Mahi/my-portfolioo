@@ -3,19 +3,29 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Carousel from "../Carousel/Carousel";
 
 const items = [
   {
     id: 1,
     title: "Flickz",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: [
+      "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    ],
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    link: "https://flickz.vercel.app/",
   },
   {
     id: 2,
     title: "Notes Management",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: [
+      "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    ],
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    link: "https://flickz.vercel.app/",
   },
   // {
   //   id: 3,
@@ -44,12 +54,14 @@ const Single = ({ item }) => {
     <div className="projects-container">
       <div className="projects-wrapper">
         <div className="projects-imageContainer" ref={ref}>
-          <img src={item.img} alt="" />
+          <Carousel images={item.img} />
         </div>
         <motion.div className="projects-textContainer" style={{ y }}>
           <h2>{item.title}</h2>
           <p>{item.desc}</p>
-          <button>See Demo</button>
+          <a href={item.link} target="blank">
+            <button>see Demo</button>
+          </a>
         </motion.div>
       </div>
     </div>
@@ -57,6 +69,7 @@ const Single = ({ item }) => {
 };
 
 const Projects = () => {
+
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
