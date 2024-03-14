@@ -18,9 +18,9 @@ const Hero = () => {
     <div className="hero">
       <div className="left">
         <div className="hero-text" data-aos="fade-right">
-          <h1 className="main-header"> WElCOME TO Rehman’S PORTFOLIO</h1>
+          <h1 className="main-header"> WElCOME TO Sumeria’S PORTFOLIO</h1>
           <span className="sub-header">
-            Rehman is a backend developer. and also he has a skills to build
+            Sumeria is a frontend developer. and also he has a skills to build
             robust and scalable applications. he has lots of skills.
           </span>
         </div>

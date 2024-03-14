@@ -17,12 +17,11 @@ const Services = () => {
     {
       title: "Front-End-side",
       description:
-        "React,Redux, Zustand,Material-Ui, styled-Components,Next JS, Tailwind css,Graph Ql",
+        "React,Redux,React Query,Mantine UI,Sass,Socket.Io, Zustand,Material-Ui, styled-Components,Next JS, Tailwind css,Graph Ql",
     },
     {
       title: "Back-End-side",
-      description:
-        "Docker,GraphQl,Linux,Django,MongoDB, MySQL,Firebase,AWS,CI/CD,Express Js,Postgresql,Fast Api,Alembic,SQLAlchemy,Python, Golang,Javascript,EC2",
+      description: "Firebase",
     },
     {
       title: "Education",
@@ -31,7 +30,7 @@ const Services = () => {
     {
       title: "Work Experience",
       description:
-        "Software developer with 2 years of Experience in kmzee-holding Proficient ability and Manage skills",
+        "Software developer with 1 years of Experience in kmzee-holding Proficient ability and Manage skills",
     },
     {
       title: "Future Education",

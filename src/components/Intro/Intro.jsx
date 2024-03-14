@@ -19,13 +19,14 @@ const Intro = () => {
             <img src={myimage} alt="myimage" />
           </div>
           <div className="rightt">
-            <h1 data-aos="fade-left">Abdul Rehman Khan</h1>
+            <h1 data-aos="fade-left">Sumeria Begum</h1>
             <div data-aos="fade-left">
-              Abdul Rehman.khan I have passion to build the code on the
-              backend-end side. I have a 2 years of experience in developing
-              roboust and scalable application. I was recently worked in
-              Iarmours as fullstack developer. So I had a lot of chances to get
-              Experiences about software
+              Sumeria.Mahi I have passion to build the code on the backend-end
+              side. I have a 1 years of experience in developing roboust and
+              scalable application. I was recently worked on Iarmours as
+              frontend developer and I was only responsible for making the whole
+              frontend part. So I had a lot of chances to get Experiences about
+              software
             </div>
           </div>
         </div>
