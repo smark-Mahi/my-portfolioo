@@ -17,27 +17,25 @@ const Services = () => {
     {
       title: "Front-End-side",
       description:
-        "React,Redux, Redux-saga, Redux-Thunk,Material-Ui, styled-Components,Next JS, Graph Ql",
+        "React,Redux, Zustand,Material-Ui, styled-Components,Next JS, Tailwind css,Graph Ql",
     },
     {
       title: "Back-End-side",
       description:
-        "MongoDB,MySQL,Firebase, ETC. proficient skills to manage the data and with authuntification",
+        "Docker,GraphQl,Linux,Django,MongoDB, MySQL,Firebase,AWS,CI/CD,Express Js,Postgresql,Fast Api,Alembic,SQLAlchemy,Python, Golang,Javascript,EC2",
     },
     {
       title: "Education",
-      description:
-        "Electronics Enginnering technician, Electronics Engineering Technology In Centennial college",
+      description: "Computer Enginnering and Technology In ISL College",
     },
     {
       title: "Work Experience",
       description:
-        "Electronics Technician,Failure analisist(FA) in Siemens Proficient ability and Manage skills",
+        "Software developer with 2 years of Experience in kmzee-holding Proficient ability and Manage skills",
     },
     {
       title: "Future Education",
-      description:
-        "Software Engineer Program in Mcmaster University will start from Jan, 2022",
+      description: "Not Decided Yet",
     },
   ];
   return (

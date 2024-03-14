@@ -3,6 +3,9 @@ import "./navbar.scss";
 import { motion } from "framer-motion";
 import name from "../../assets/name.png";
 import { useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const [windowHeight, setWindoHeight] = useState(false);
@@ -17,8 +20,15 @@ const Navbar = () => {
 
   window.addEventListener("scroll", handleWindowHeight);
 
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
+
   return (
-    <div className={windowHeight ? "navbar navbar-bg" : "navbar"}>
+    <div
+      className={windowHeight ? "navbar navbar-bg" : "navbar"}
+      data-aos="fade-right"
+    >
       {/* Sidebar */}
       <div className="left">
         <Sidebar />

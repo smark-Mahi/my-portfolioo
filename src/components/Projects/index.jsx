@@ -4,28 +4,43 @@ import { useEffect, useRef } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Carousel from "../Carousel/Carousel";
+import f1 from "../../assets/f1.png";
+import f2 from "../../assets/f2.png";
+import f3 from "../../assets/f3.png";
+import f4 from "../../assets/f4.png";
+import f6 from "../../assets/f6.png";
+import g1 from "../../assets/g1.png";
+import g2 from "../../assets/g2.png";
+import g3 from "../../assets/g3.png";
+import g4 from "../../assets/g4.png";
+import g5 from "../../assets/g5.png";
 
 const items = [
   {
     id: 1,
     title: "Flickz",
-    img: [
-      "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: [f1, f2, f3, f4, f6],
+    desc: [
+      "Created a personal project, a social media app with chat functionality.",
+      "• Engineered the backend using FastAPI, PostgreSQL, SQLAlchemy, and Alembic for seamless database migrations.",
+      "• Integrated Socket.IO for real-time chat and event updates such as likes and follows.",
+      "• Collaborated with a friend to craft the responsive front end using React.",
+      "• The project showcases expertise in full-stack development, real-time communication, and collaborative teamwork",
     ],
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
     link: "https://flickz.vercel.app/",
   },
   {
     id: 2,
     title: "Notes Management",
-    img: [
-      "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: [g1, g2, g3, g4, g5],
+    desc: [
+      "Developed mind castle, a notes application using FastAPI and GraphQL, leveraging SQLAlchemy as an ORM and Alembic for database migrations.",
+      "• Implemented oauth2 authentication with JWT access and refresh tokens for secure user authentication.",
+      "• Enabled CRUD operations for notes, allowing users to manage their notes efficiently.",
+      "• Enhanced note sharing with read-only and edit permissions, facilitating collaboration among users.",
+      "• Utilized GraphQL note functionalities and employed REST for authentication.",
     ],
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    link: "https://flickz.vercel.app/",
+    link: "https://mind-castle-gql.vercel.app/",
   },
   // {
   //   id: 3,
@@ -58,7 +73,9 @@ const Single = ({ item }) => {
         </div>
         <motion.div className="projects-textContainer" style={{ y }}>
           <h2>{item.title}</h2>
-          <p>{item.desc}</p>
+          {item.desc.map((descrip, i) => (
+            <p key={i}>{descrip}</p>
+          ))}
           <a href={item.link} target="blank">
             <button>see Demo</button>
           </a>
