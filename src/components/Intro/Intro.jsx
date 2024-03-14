@@ -21,8 +21,8 @@ const Intro = () => {
           <div className="rightt">
             <h1 data-aos="fade-left">Sumeria Begum</h1>
             <div data-aos="fade-left">
-              Sumeria.Mahi I have passion to build the code on the backend-end
-              side. I have a 1 years of experience in developing roboust and
+              Sumeria.Mahi I have passion to build the code on the frontend
+              side. I have a 1 year of experience in developing roboust and
               scalable application. I was recently worked on Iarmours as
               frontend developer and I was only responsible for making the whole
               frontend part. So I had a lot of chances to get Experiences about

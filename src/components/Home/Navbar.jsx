@@ -25,10 +25,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
-      className={windowHeight ? "navbar navbar-bg" : "navbar"}
-      data-aos="fade-right"
-    >
+    <div className={windowHeight ? "navbar navbar-bg" : "navbar"}>
       {/* Sidebar */}
       <div className="left">
         <Sidebar />
