@@ -14,6 +14,9 @@ import g2 from "../../assets/g2.png";
 import g3 from "../../assets/g3.png";
 import g4 from "../../assets/g4.png";
 import g5 from "../../assets/g5.png";
+import v from "../../assets/v.png";
+import v1 from "../../assets/v1.png";
+import v3 from "../../assets/v3.png";
 
 const items = [
   {
@@ -42,12 +45,13 @@ const items = [
     ],
     link: "https://mind-castle-gql.vercel.app/",
   },
-  // {
-  //   id: 3,
-  //   title: "Vanilla JS App",
-  //   img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  // },
+  {
+    id: 3,
+    title: "Stone Paper Scissor Game",
+    img: [v, v1, v3],
+    desc: ["Developed stone paper scissor game using vanilla Js "],
+    link: "http://famous-game.surge.sh",
+  },
   // {
   //   id: 4,
   //   title: "Music App",
