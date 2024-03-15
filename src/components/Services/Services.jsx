@@ -20,8 +20,8 @@ const Services = () => {
         "React,Redux,React Query,Mantine UI,Sass,Socket.Io, Zustand,Material-Ui, styled-Components,Next JS, Tailwind css,Graph Ql",
     },
     {
-      title: "Back-End-side",
-      description: "Firebase",
+      title: "Back-End-side & Languages",
+      description: "Firebase, Python, Javascrip,Typescript",
     },
     {
       title: "Education",

@@ -20,8 +20,8 @@ const Hero = () => {
         <div className="hero-text" data-aos="fade-right">
           <h1 className="main-header"> WElCOME TO Sumeria’S PORTFOLIO</h1>
           <span className="sub-header">
-            Sumeria is a frontend developer. and also he has a skills to build
-            robust and scalable applications. he has lots of skills.
+            Sumeria is a frontend developer. and also she has a skills to build
+            robust and scalable applications. she has lots of skills.
           </span>
         </div>
       </div>
