@@ -15,6 +15,7 @@ import g3 from "../../assets/g3.png";
 import g4 from "../../assets/g4.png";
 import g5 from "../../assets/g5.png";
 import v from "../../assets/v.png";
+import v1 from "../../assets/v1.png";
 import roc8 from "../../assets/roc8.png";
 import roc82 from "../../assets/roc82.png";
 import roc83 from "../../assets/roc83.png";
@@ -61,6 +62,7 @@ const items = [
       "Developed an ecommerce website,a simple ecommerce website where user can create account and login and select the items in which they are intrested.",
       "Used json-serer to mock the rest api",
     ],
+    link: "",
   },
 ];
 
