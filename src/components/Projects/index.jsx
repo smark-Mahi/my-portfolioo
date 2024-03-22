@@ -16,6 +16,7 @@ import g4 from "../../assets/g4.png";
 import g5 from "../../assets/g5.png";
 import v from "../../assets/v.png";
 import v1 from "../../assets/v1.png";
+import v3 from "../../assets/v3.png";
 import roc8 from "../../assets/roc8.png";
 import roc82 from "../../assets/roc82.png";
 import roc83 from "../../assets/roc83.png";
