@@ -1,8 +1,15 @@
+@import "../../app.scss";
 .carousel {
     display: flex;
     height: 400px;
-    width: 100%;
+    width: 750px;
     max-width: 800px;
+    padding: 8px;
+
+    
+    @include mobile {
+     width: 100%;
+    }
   }
   
   .carousel_wrapper {
