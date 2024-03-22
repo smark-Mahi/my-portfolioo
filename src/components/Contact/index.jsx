@@ -6,9 +6,9 @@ const Contact = () => {
       <div className="bg-image"></div>
       <div className="contact-content">
         <div className="contact-container">
-          <h1 className="contact-title">Contact to Eric</h1>
+          <h1 className="contact-title">Contact to Sumeria</h1>
           <div className="contact-para">
-            If you want to contact with Eric, You can write this form. this
+            If you want to contact with Sumeria, You can write this form. this
             message will send directly to Eric
           </div>
           <div className="contact-form">

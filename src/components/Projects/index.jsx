@@ -15,8 +15,9 @@ import g3 from "../../assets/g3.png";
 import g4 from "../../assets/g4.png";
 import g5 from "../../assets/g5.png";
 import v from "../../assets/v.png";
-import v1 from "../../assets/v1.png";
-import v3 from "../../assets/v3.png";
+import roc8 from "../../assets/roc8.png";
+import roc82 from "../../assets/roc82.png";
+import roc83 from "../../assets/roc83.png";
 
 const items = [
   {
@@ -52,12 +53,15 @@ const items = [
     desc: ["Developed stone paper scissor game using vanilla Js "],
     link: "http://famous-game.surge.sh",
   },
-  // {
-  //   id: 4,
-  //   title: "Music App",
-  //   img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  // },
+  {
+    id: 4,
+    title: "Roc8 assignment",
+    img: [roc8, roc82, roc83],
+    desc: [
+      "Developed an ecommerce website,a simple ecommerce website where user can create account and login and select the items in which they are intrested.",
+      "Used json-serer to mock the rest api",
+    ],
+  },
 ];
 
 const Single = ({ item }) => {
