@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="divider"></div>
           <div className="copyrightcontainer">
             <span className="copyright">
-              2024 Eric Shin. All rights reserved
+              2024 Sumeria Begum. All rights reserved
             </span>
             <span className="link-container">
               <svg
